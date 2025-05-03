@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição - Curso de Homilética e Oratória</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    .header { position: relative; text-align: center; color: white; }
+    .header img { width: 100%; height: auto; }
+    .header-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .header-text h1 { font-size: 36px; margin: 0; }
+    .header-text p { font-size: 18px; margin: 10px 0 0; }
+    .container { max-width: 600px; margin: 30px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { color: #333; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, textarea, select { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    button { background: #4CAF50; color: white; border: none; padding: 15px; border-radius: 5px; margin-top: 20px; cursor: pointer; font-size: 16px; }
+    button:hover { background: #45a049; }
+    .info { margin-top: 20px; font-size: 14px; }
+    .highlight { font-weight: bold; color: #4CAF50; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://via.placeholder.com/1200x350.png?text=Curso+de+Homil%C3%A9tica+e+Orat%C3%B3ria" alt="Banner do Curso">
+    <div class="header-text">
+      <h1>Curso de Homilética e Oratória</h1>
+      <p>Inscreva-se agora e desenvolva suas habilidades de pregação!</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Formulário de Inscrição</h2>
+
+    <form action="#" method="POST" onsubmit="alert('Inscrição enviada com sucesso! Entraremos em contato.'); return false;">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone/WhatsApp:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="igreja">Igreja:</label>
+      <input type="text" id="igreja" name="igreja">
+
+      <label for="pagamento">Você já realizou o pagamento via PIX?</label>
+      <select id="pagamento" name="pagamento" required>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Ainda não</option>
+      </select>
+
+      <button type="submit">Enviar Inscrição</button>
+    </form>
+
+    <div class="info">
+      <p><span class="highlight">Valor:</span> R$ 25,00</p>
+      <p><span class="highlight">PIX:</span> igrejadavila@gmail.com</p>
+      <p><span class="highlight">WhatsApp:</span> (11) 99334-5653 ou (11) 91502-0391</p>
+      <p><span class="highlight">E-mails para contato:</span><br> cibalde2002@gmail.com<br> karol.csilva07@gmail.com</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
